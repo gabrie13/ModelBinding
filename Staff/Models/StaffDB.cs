@@ -24,6 +24,7 @@ namespace Staff.Models
         public System.Data.Entity.DbSet<Staff.Models.Location> Locations { get; set; }
 
         public System.Data.Entity.DbSet<Staff.Models.Person> People { get; set; }
-    
+
+        public System.Data.Entity.DbSet<Staff.Models.Register> Registers { get; set; }
     }
 }
