@@ -27,5 +27,7 @@ namespace Staff.Models
 
         public System.Data.Entity.DbSet<Staff.Models.Register> Registers { get; set; }
 
+        public System.Data.Entity.DbSet<Staff.Models.ShiftClose> ShiftCloses { get; set; }
+
     }
 }

@@ -22,8 +22,10 @@ namespace Staff.Models
         [Display(Name = "Zip Code")]
         public string ZipCode { get; set; }
 
+        [DataType(DataType.PhoneNumber)]
         public string Phone { get; set; }
 
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
     }
 }

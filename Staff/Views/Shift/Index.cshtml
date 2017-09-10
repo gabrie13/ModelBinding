@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Staff.Models.ShiftClose>
+
+@{
+    ViewBag.Title = "Shift Close";
+}
+
+
+<p>
+    @Html.ActionLink("Add Shift Close Entry", "Create", null, new { @class = "btn btn-primary"})
+</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Person.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClosingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShiftNotes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Person.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClosingDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShiftNotes)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ShiftCloseId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ShiftCloseId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ShiftCloseId })
+                </td>
+            </tr>
+        </tbody>
+    }
+
+</table>

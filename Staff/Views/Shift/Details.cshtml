@@ -1,0 +1,42 @@
+﻿@model Staff.Models.ShiftClose
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ShiftClose</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClosingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClosingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShiftNotes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShiftNotes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ShiftCloseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

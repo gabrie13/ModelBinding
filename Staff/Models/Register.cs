@@ -36,6 +36,7 @@ namespace Staff.Models
         [DataType(DataType.Currency)]
         public decimal Amex { get; set; }
 
+        [Display(Name = "Gift Card")]
         [DataType(DataType.Currency)]
         public decimal GiftCard { get; set; }
 
