@@ -38,6 +38,13 @@ namespace Staff.Models
 
         public string Address { get; set; }
 
+        public string City { get; set; }
+
+        public string State { get; set; }
+
+        [Display(Name = "Zip Code")]
+        public string ZipCode { get; set; }
+
         public virtual Position Position { get; set; }
 
         public virtual Location Location { get; set; }

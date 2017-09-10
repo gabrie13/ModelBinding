@@ -49,7 +49,7 @@ namespace Staff.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PersonId,PositionId,LocationId,FirstName,LastName,Phone,Email,Address")] Person person)
+        public ActionResult Create([Bind(Include = "PersonId,PositionId,LocationId,FirstName,LastName,Phone,Email,Address,City,State,ZipCode")] Person person)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace Staff.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PersonId,PositionId,LocationId,FirstName,LastName,Phone,Email,Address")] Person person)
+        public ActionResult Edit([Bind(Include = "PersonId,PositionId,LocationId,FirstName,LastName,Phone,Email,Address,City,State,ZipCode")] Person person)
         {
             if (ModelState.IsValid)
             {

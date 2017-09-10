@@ -10,6 +10,7 @@ namespace Staff.Models
     {
         public int LocationId { get; set; }
 
+        [Display(Name = "Location")]
         public string LocationName { get; set; }
 
         public string Address { get; set; }
@@ -18,6 +19,7 @@ namespace Staff.Models
 
         public string State { get; set; }
 
+        [Display(Name = "Zip Code")]
         public string ZipCode { get; set; }
 
         public string Phone { get; set; }
